@@ -40,7 +40,7 @@ let myweather = (weathercont) => {
 
 let mcli = async (location) => {
   await fetch(
-    "http://api.weatherapi.com/v1/current.json?key=bab35c530325422da7480924232907&q=" +
+    "https://api.weatherapi.com/v1/current.json?key=bab35c530325422da7480924232907&q=" +
       location +
       "&aqi=no"
   )
