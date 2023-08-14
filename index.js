@@ -1,3 +1,5 @@
+alert("hello java is working");
+
 let where = 0;
 let myweather = (weathercont) => {
   if (where == 1) {
