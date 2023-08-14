@@ -1,7 +1,7 @@
 let where = 0;
 let myweather = (weathercont) => {
   if (where == 1) {
-    let name = weathercont.location.country;
+    let name = weathercont.location.name;
     let icon = weathercont.current.condition.icon;
     let description = weathercont.current.condition.text;
     let temp = weathercont.current.temp_c;
@@ -40,7 +40,7 @@ let myweather = (weathercont) => {
 
 let mcli = async (location) => {
   await fetch(
-    "http://api.weatherapi.com/v1/current.json?key=bab35c530325422da7480924232907&q=" +
+    "https://api.weatherapi.com/v1/current.json?key=bab35c530325422da7480924232907&q=" +
       location +
       "&aqi=no"
   )
