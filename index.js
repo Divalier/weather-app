@@ -26,8 +26,8 @@ let myweather = (weathercont) => {
     let temp = weathercont.current.temp_c;
     let humidity = weathercont.current.humidity;
     let speed = weathercont.current.wind_kph;
-    if (count = name){document.querySelector("#city").innerHTML = "Weather in "+ name;}
-       else{document.querySelector("#city").innerHTML = "Weather in "+count+"-"+ name;}
+    if (count = name){document.querySelector("#city").innerHTML = "Weather in "+ name;};
+       else{document.querySelector("#city").innerHTML = "Weather in "+count+"-"+ name;};
     document.querySelector("#icon").src = "https:" + icon;
     console.log('"' + "https:" + icon + '"');
     document.querySelector("#description").innerText = description;
