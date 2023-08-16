@@ -1,4 +1,5 @@
 let where = 0;
+let count = "";
 let myweather = (weathercont) => {
   if (where == 1) {
     let name = weathercont.location.name;
@@ -25,7 +26,7 @@ let myweather = (weathercont) => {
     let temp = weathercont.current.temp_c;
     let humidity = weathercont.current.humidity;
     let speed = weathercont.current.wind_kph;
-    document.querySelector("#city").innerHTML = "Weather in " + name;
+    document.querySelector("#city").innerHTML = "Weather in "+count+"-"+ name;
     document.querySelector("#icon").src = "https:" + icon;
     console.log('"' + "https:" + icon + '"');
     document.querySelector("#description").innerText = description;
@@ -60,7 +61,7 @@ let mcli = async (location) => {
 };
 
 let srh = () => {
-  let count = document.querySelector(".search-bar").value;
+   count = document.querySelector(".search-bar").value;
   if (count) {
     mcli(count);
     where = 2;
